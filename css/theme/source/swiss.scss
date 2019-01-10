@@ -1,0 +1,227 @@
+/**
+ * Swiss theme for reveal.js
+ * Author: Matthew Booe http://github.com/mirdaki/revealjs-swiss
+ *
+ */
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Default colors
+$backgroundColor: white;
+$textColor: black;
+$primaryHighlight: gray;
+$secondaryHighlight: gray;
+
+// Pull in colors (REPLACE THE LINE BELOW) ------
+@import "swiss-colors/black";
+// ---------------------------------------------
+
+// Primary/body text
+$mainFont: "Helvetica Neue", Arial, sans-serif;
+$mainFontSize: 1.4em;
+$mainColor: $textColor;
+
+// Vertical spacing between blocks of text
+$blockMargin: .2em;
+
+// Headings
+$headingMargin: 0 0 $blockMargin 0;
+$headingFont: "Helvetica Neue", Arial, sans-serif;
+$headingColor: $textColor;
+$headingLineHeight: 1em;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingTextShadow: none;
+$headingFontWeight: normal;
+$heading1TextShadow: $headingTextShadow;
+
+$heading1Size: 2.9em;
+$heading2Size: 1.8em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+// Links and actions
+$linkColor: $primaryHighlight;
+$linkColorHover: lighten( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: $secondaryHighlight;
+$selectionColor: none;
+
+// Non-default settings
+
+// Code blocks
+$codeBackground: #23241f;
+
+// Screen sizes
+$viewport-tiny: "max-width: 568px";
+$viewport-small: "max-width: 768px";
+$viewport-wide: "min-width: 1280px";
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+// Overrides after theme template import
+
+// Paragraph and other common
+
+.reveal p,
+.reveal pre,
+.reveal ul,
+.reveal ol,
+.reveal blockquote {
+	font-weight: 300;
+	box-shadow: none;
+	padding: 0;
+	width: 90%;
+	margin: 0 0 $blockMargin;
+}
+
+::selection {
+	color: inherit;
+	background: $secondaryHighlight;
+}
+
+// Code
+
+.reveal pre code {
+	padding: 0;
+	width: 100%;
+	background-color: $codeBackground;
+	// display: inline-block;
+	border-radius: 7px;
+	max-height: none;
+}
+
+.reveal small code {
+	vertical-align: baseline;
+}
+
+// Headings
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+	font-weight: 700;
+}
+
+.reveal h1 {
+	margin-bottom: .3em;
+}
+
+.reveal h3 {
+	margin-bottom: 2em;
+}
+
+// Quotes
+
+.reveal blockquote {
+	background: $backgroundColor;
+	width: 75%;
+}
+
+.reveal blockquote p {
+	margin: 0;
+	// Left and right quotes
+	quotes: "\201C" "\201D";
+}
+
+.reveal blockquote p::before {
+  content: open-quote;
+}
+
+.reveal blockquote p::after {
+  content: close-quote;
+}
+
+.reveal blockquote hr {
+	border: solid $secondaryHighlight;
+	border-width: .1em 0 0 0;
+	width: 2em;
+	margin: .5em 0;
+}
+
+.reveal blockquote cite {
+	margin: 0;
+}
+
+// Gird time!
+.reveal .slides {
+	text-align: left;
+}
+
+.reveal section,
+.reveal section > section {
+	font-weight: inherit;
+	display: grid !important;
+	grid-template-columns: 1fr;
+	justify-items: start;
+	align-items: start;
+	margin: .5rem 1.1rem;
+	top: 0 !important;
+}
+
+// Make sure sections in sections aren't offset
+.reveal section.stack {
+	margin: 0;
+}
+
+.reveal section h2 {
+	margin-bottom: .9em;
+}
+
+// Make sure elements are aligned
+.reveal pre,
+.reveal table {
+	margin: 0;
+}
+
+.reveal ul,
+.reveal ol {
+	margin: 0 0 0 1em;
+}
+
+.reveal ul li,
+.reveal ol li {
+	margin: 0 0 .4em;
+}
+
+
+html {
+	font-size: 4.5vmin;
+}
+@media (#{$viewport-small}) {
+	html {
+		// font-size: 20px;
+	}
+
+	.reveal section,
+	.reveal section>section {
+		margin: 1em 1.2rem;
+	}
+}
+@media (#{$viewport-tiny}) {
+	html {
+		// font-size: 16px;
+	}
+
+	.reveal section,
+	.reveal section>section {
+		margin: 1em 1rem;
+	}
+}
+
+// Main Title Slide
+
+// Section Title Slide
+
+// Content Slide (maybe a quite slide too)
+
+// Two Column Content Slide
