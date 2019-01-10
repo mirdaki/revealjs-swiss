@@ -1,0 +1,27 @@
+{
+  "name": "revealjs-swiss",
+  "version": "0.1.0",
+  "main": [
+    "js/reveal.js",
+    "css/reveal.css"
+  ],
+  "homepage": "https://github.com/mirdaki/revealjs-swiss",
+  "license": "MIT",
+  "description": "Swiss design inspired themes for the reveal.js framework",
+  "authors": [
+    "Matthew Booe <mirdaki@users.noreply.github.com>"
+  ],
+  "dependencies": {
+    "headjs": "~1.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mirdaki/revealjs-swiss.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+}
