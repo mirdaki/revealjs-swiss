@@ -9,6 +9,7 @@
  * https://github.com/isagalaev/highlight.js/
  *
  */
+@import "https://rsms.me/inter/inter.css";
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -17,7 +18,7 @@ body {
   background-color: #181818; }
 
 .reveal {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.4em;
   font-weight: normal;
   color: #fff; }
@@ -48,8 +49,8 @@ body {
 .reveal h6 {
   margin: 0 0 0.2em 0;
   color: #fff;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-weight: normal;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 800;
   line-height: 1em;
   letter-spacing: normal;
   text-transform: none;
@@ -279,7 +280,7 @@ body {
 .reveal ul,
 .reveal ol,
 .reveal blockquote {
-  font-weight: 300;
+  font-weight: 400;
   box-shadow: none;
   padding: 0;
   width: 90%;
@@ -311,7 +312,7 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  font-weight: 700; }
+  font-weight: 800; }
 
 .reveal h1 {
   margin-bottom: .3em; }

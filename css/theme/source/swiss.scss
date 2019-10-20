@@ -19,8 +19,12 @@ $secondaryHighlight: gray;
 @import "swiss-colors/black";
 // ---------------------------------------------
 
+// Pull in preferred font
+@import "https://rsms.me/inter/inter.css";
+// ---------------------------------------------
+
 // Primary/body text
-$mainFont: "Helvetica Neue", Arial, sans-serif;
+$mainFont: "Inter", "Helvetica Neue", Arial, sans-serif;
 $mainFontSize: 1.4em;
 $mainColor: $textColor;
 
@@ -29,19 +33,22 @@ $blockMargin: .2em;
 
 // Headings
 $headingMargin: 0 0 $blockMargin 0;
-$headingFont: "Helvetica Neue", Arial, sans-serif;
+$headingFont: $mainFont;
 $headingColor: $textColor;
 $headingLineHeight: 1em;
 $headingLetterSpacing: normal;
 $headingTextTransform: none;
 $headingTextShadow: none;
-$headingFontWeight: normal;
+$headingFontWeight: 800;
 $heading1TextShadow: $headingTextShadow;
 
 $heading1Size: 2.9em;
 $heading2Size: 1.8em;
 $heading3Size: 1.3em;
 $heading4Size: 1.0em;
+
+// Text
+$textFontWeight: 400;
 
 // Links and actions
 $linkColor: $primaryHighlight;
@@ -74,7 +81,7 @@ $viewport-wide: "min-width: 1280px";
 .reveal ul,
 .reveal ol,
 .reveal blockquote {
-	font-weight: 300;
+	font-weight: $textFontWeight;
 	box-shadow: none;
 	padding: 0;
 	width: 90%;
@@ -116,7 +123,7 @@ $viewport-wide: "min-width: 1280px";
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-	font-weight: 700;
+	font-weight: $headingFontWeight;
 }
 
 .reveal h1 {
