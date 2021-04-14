@@ -5,8 +5,8 @@
  */
 
 // Default mixins and settings -----------------
-@import "../template/mixins";
-@import "../template/settings";
+@import "../../../reveal.js/css/theme/template/mixins";
+@import "../../../reveal.js/css/theme/template/settings";
 // ---------------------------------------------
 
 // Default colors
@@ -20,7 +20,7 @@ $secondaryHighlight: gray;
 // ---------------------------------------------
 
 // Pull in preferred font
-@import "https://rsms.me/inter/inter.css";
+@import url(https://rsms.me/inter/inter.css);
 // ---------------------------------------------
 
 // Primary/body text
@@ -69,7 +69,7 @@ $viewport-small: "max-width: 768px";
 $viewport-wide: "min-width: 1280px";
 
 // Theme template ------------------------------
-@import "../template/theme";
+@import "../../../reveal.js/css/theme/template/theme.scss";
 // ---------------------------------------------
 
 // Overrides after theme template import
@@ -94,9 +94,9 @@ $viewport-wide: "min-width: 1280px";
 }
 
 .reveal h3 + hr {
-  border: solid $secondaryHighlight;
-  border-width: .15em 0 0 0;
-  width: 2em;
+	border: solid $secondaryHighlight;
+	border-width: .15em 0 0 0;
+	width: 2em;
 	margin: -.5em 0 .5em; 
 }
 
@@ -148,11 +148,11 @@ $viewport-wide: "min-width: 1280px";
 }
 
 .reveal blockquote p::before {
-  content: open-quote;
+	content: open-quote;
 }
 
 .reveal blockquote p::after {
-  content: close-quote;
+	content: close-quote;
 }
 
 .reveal blockquote hr {
