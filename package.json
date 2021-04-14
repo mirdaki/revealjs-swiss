@@ -1,0 +1,21 @@
+{
+	"name": "revealjs-swiss",
+	"version": "0.2.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "live-server"
+	},
+	"keywords": [],
+	"author": {
+		"name": "Matthew Booe",
+		"email": "mirdaki@users.noreply.github.com"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"live-server": "^1.2.1"
+	},
+	"dependencies": {
+		"npm": "^7.9.0"
+	}
+}
