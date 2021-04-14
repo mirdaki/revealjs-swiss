@@ -8,7 +8,7 @@ Both the [Jekyll Swiss theme](https://broccolini.net/swiss/) and the [reveal.js 
 
 To use, copy the `swiss.scss` file and the `swiss-colors` folder from `css/theme/source` into your own reveal.js presentation.
 
-To change the color style, update the `@import "swiss-colors/COLOR";` on line 19 of the `swiss.scss` with respective color you would like and regenerte the CSS (you will probaly have to switch to the gh-pages branch to generate the file).
+To change the color style, update the `@import "swiss-colors/COLOR";` on line 19 of the `swiss.scss` with respective color you would like and regenerate the CSS (you will probably have to switch to the gh-pages branch to generate the file).
 
 Finally, update your `index.html` to use `css/theme/swiss.css` as your theme.
 
